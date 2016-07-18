@@ -11,12 +11,13 @@
         visibility: hidden;
         clear: both;
     }
-
-    input{outline: none;}
+    
+    input {
+        outline: none;
+    }
     
     body {
         width: 100%;
-        background-color: #32323C;
         font-family: Helvetica, Calibri;
         min-width: 1190px;
     }
@@ -64,14 +65,16 @@
     aside {
         float: left;
         position: fixed;
-        top: 70px;
         left: 0;
+        height:100%;
         width: 260px;
+        background-color:#32323C;
+        z-index:9999;
     }
     
     #user-info {
         overflow: hidden;
-        margin-top: 20px;
+        margin-top: 90px;
         position: relative;
     }
     
@@ -111,6 +114,7 @@
     #user-static div {
         float: left;
         padding: 0 30px;
+        position: relative;
     }
     
     #user-static p,
