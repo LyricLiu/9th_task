@@ -31,56 +31,120 @@
             </div>
         </div>
         <div>
-            <dl id="active-nav">
-                <dt>
+            <ul id="navigator">
+                <li class="active">
+                    <a href="#" id="nav1">
+                        <span></span>
+                        <p>Personal Report</p>
+                    </a>
+                    <div class="clear_me"></div>
+                    <ul id="three-nav">
+                        <li id="nav1-1">
+                            <a href="#">
+                                <span></span>
+                                <span></span>
+                                <p>Package 1</p>
+                            </a>
+                        </li>
+                        <li id="nav1-1-1">
+                            <a href="#">
+                                <span></span>
+                                <p>doc.</p>
+                            </a>
+                        </li>
+                        <li id="nav1-2">
+                            <a href="#">
+                                <span></span>
+                                <span></span>
+                                <p>Package 2</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="nav2">
+                        <span></span>
+                        <p>Favorite</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="nav3">
+                        <span></span>
+                        <p>My Share</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="nav4">
+                        <span></span>
+                        <p>Photos</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="nav5">
+                        <span></span>
+                        <p>My Diary</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="nav6">
+                        <span></span>
+                        <p>Account Info</p>
+                    </a>
+                </li>
+            </ul>
+            <!--
+            <ul id="active-nav">
+                <li>
+                    <span></span>
                     <img src="img/file_open.png" alt="file">
-                    <span>Personal Report</span>
-                </dt>
-                <dd>
+                    <p>Personal Report</p>
+                </li>
+                <li>
                     <img src="img/open_arrow.png" alt="arrow">
                     <img src="img/file_cur.png" alt="smfile">
-                    <span>Package 1</span>
-                </dd>
-                <dd id="three-nav">
+                    <p>Package 1</p>
+                </li>
+                <li id="three-nav">
                     <img src="img/doc_open.png" alt="doc">
-                    <span>doc.</span>
-                </dd>
-                <dd>
+                    <p>doc.</p>
+                </li>
+                <li>
                     <img src="img/close_arrow.png" alt="arrow">
                     <img src="img/file_cur.png" alt="smfile">
-                    <span>Package 2</span>
-                </dd>
-            </dl>
-            <dl class="asidenav">
-                <dt>
+                    <p>Package 2</p>
+                </li>
+            </ul>
+            <ul class="asidenav">
+                <li>
                     <img src="img/star.png" alt="star">
-                    <span>Favorite</span>
-                </dt>
-            </dl>
-            <dl class="asidenav">
-                <dt>
+                    <p>Favorite</p>
+                </li>
+            </ul>
+            <ul class="asidenav">
+                <li>
                     <img src="img/share.png" alt="share">
-                    <span>My Share</span>
-                </dt>
-            </dl>
-            <dl class="asidenav">
-                <dt>
+                    <p>My Share</p>
+                </li>
+            </ul>
+            <ul class="asidenav">
+                <li>
                     <img src="img/star.png" alt="star">
-                    <span>Photos</span>
-                </dt>
-            </dl>
-            <dl class="asidenav">
-                <dt>
+                    <p>Photos</p>
+                </li>
+            </ul>
+            <ul class="asidenav">
+                <li>
                     <img src="img/star.png" alt="diary">
-                    <span>My Diary</span>
-                </dt>
-            </dl>
-            <dl class="asidenav">
-                <dt>
+                    <p>My Diary</p>
+                </li>
+            </ul>
+            <ul class="asidenav">
+                <li>
                     <img src="img/user_info.png" alt="info">
-                    <span>Account Info</span>
-                </dt>
-            </dl>
+                    <p>Account Info</p>
+                </li>
+            </ul>
+        -->
         </div>
     </aside>
     <section>
@@ -123,7 +187,7 @@
                     <img src="img/left.png" alt="left">
                 </div>
                 <div id="module2-tags">
-                    <div>
+                    <div class="active">
                         <span></span>
                         <p>8:00 am</p>
                         <h2>1200</h2>
@@ -290,18 +354,13 @@
                     <p>Calender</p>
                 </div>
                 <div id="module6-select">
-                    <div>
-                        <span></span>
-                        <p>2016</p>
-                    </div>
-                    <div>
-                        <span></span>
-                        <p>April</p>
-                    </div>
-                    <div>
-                        <span></span>
-                        <p>Marked</p>
-                    </div>
+                    <select name="select">
+                        <option value="2016" selected>2016</option>
+                    </select>
+                    <select name="select">
+                        <option value="April" selected>April</option>
+                    </select>
+                    <input type="date">
                     <input type="submit" value="Today">
                 </div>
                 <table>
@@ -355,7 +414,7 @@
                                 <br>
                                 <span>三月</span>
                             </td>
-                            <td id="module6-active">
+                            <td class="active">
                                 <b>8</b>
                                 <br>
                                 <span>初二</span>
